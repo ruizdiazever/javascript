@@ -41,18 +41,15 @@ print("c) Multiplos de 15: ",contador_multiplo)
 print("D) Suma de pares: ",suma_pares)
 
 
-
-
 """ E) """
 print("\nEjercicio E:")
-""" numeroInput_2=[]
-suma_py=0
-suma_valores_2=0
+suma=0
+lista =[1,2,500,96,40,85,99,105,26,28]
 
 for i in range(10):
-    numeroInput_py[i]= int(input("Ingrese un numero: ")) """
-
-
+    if (i>4):
+        suma+= lista[i]
+print("La suma de las ultimas 5 cifras es: ",suma)
 
 
 """ F) """
