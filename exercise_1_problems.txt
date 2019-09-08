@@ -1,4 +1,4 @@
-Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+	Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 
 For
     A)  #LISTO# 	La cantidad de valores negativos ingresados. 
