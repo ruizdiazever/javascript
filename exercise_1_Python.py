@@ -1,21 +1,3 @@
-""" 
-    Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
-For
-    A)  #LISTO# 	La cantidad de valores negativos ingresados.
-    B)  #LISTO# 	La cantidad de valores positivos ingresados.
-    C)  #LISTO# 	La cantidad de múltiplos de 15.
-    D)  #LISTO# 	El valor acumulado de los números ingresados que son pares.
-    E)  Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
-    F)  #LISTO#     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
-
-While
-    G)  #LISTO#     Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
-    H)  #LISTO#     Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. 
-"""
-
-
-
-
 print("Ejercicios A, B, C & D:")
 """ A) B) C) D) """
 numeroInput=0
@@ -41,6 +23,7 @@ print("c) Multiplos de 15: ",contador_multiplo)
 print("D) Suma de pares: ",suma_pares)
 
 
+
 """ E) """
 print("\nEjercicio E:")
 suma=0
@@ -59,7 +42,7 @@ for i in range(10):
     if (i>4):
         suma+=numero
 print("La suma de los ultimos 5 numeros es: ", suma)
-    
+
 
 
 """ F) """
