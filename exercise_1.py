@@ -1,17 +1,18 @@
 """ 
-Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+    Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 For
-    A)LISTO 	La cantidad de valores negativos ingresados.
-    B)LISTO 	La cantidad de valores positivos ingresados.
-    C)LISTO 	La cantidad de múltiplos de 15.
-    D)LISTO 	El valor acumulado de los números ingresados que son pares.
+    A)  #LISTO# 	La cantidad de valores negativos ingresados.
+    B)  #LISTO# 	La cantidad de valores positivos ingresados.
+    C)  #LISTO# 	La cantidad de múltiplos de 15.
+    D)  #LISTO# 	El valor acumulado de los números ingresados que son pares.
     E)  Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
-    F)LISTO     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
+    F)  #LISTO#     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
 
 While
-    G)LISTO     Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
-    H)LISTO     Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. 
+    G)  #LISTO#     Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
+    H)  #LISTO#     Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. 
 """
+
 
 
 
@@ -23,7 +24,6 @@ contador_positivo=0
 suma_pares=0
 tabla=0
 contador_multiplo=0
-
 for i in range(10):
     numeroInput=int(input("Introduce un numero: "))
     if numeroInput<0:
@@ -62,6 +62,8 @@ numeroInput_3= int(input("Ingrese un numero: "))
 for i in range (1,11,1):
     tabla = numeroInput_3*i
     print("F) ",numeroInput_3,"x",i,"= ",tabla,)
+
+
 
 
 """ G) """
