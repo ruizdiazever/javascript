@@ -1,18 +1,88 @@
-""" For
+""" 
+For
+    Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 
-Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
-a)	La cantidad de valores negativos ingresados.
-b)	La cantidad de valores positivos ingresados.
-c)	La cantidad de múltiplos de 15.
-d)	El valor acumulado de los números ingresados que son pares.
-
-Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
-
-Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado po4 teclado.
+    A)LISTO 	La cantidad de valores negativos ingresados.
+    B)LISTO 	La cantidad de valores positivos ingresados.
+    C)LISTO 	La cantidad de múltiplos de 15.
+    D)LISTO 	El valor acumulado de los números ingresados que son pares.
+    E)  Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+    F)LISTO     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
 
 While
+    G)  Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
+    H)  Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. 
+"""
 
-Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
 
 
-Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. """
+
+
+""" A) 	La cantidad de valores negativos ingresados.
+    B) 	La cantidad de valores positivos ingresados.
+    C) 	La cantidad de múltiplos de 15.
+    D) 	El valor acumulado de los números ingresados que son pares. """
+
+numeroInput=0
+contador_negativo=0
+contador_positivo=0
+suma_pares=0
+tabla=0
+contador_multiplo=0
+
+for i in range(10):
+    numeroInput=int(input("Introduce un numero: "))
+    if numeroInput<0:
+        contador_negativo+=1
+    else:
+        contador_positivo+=1
+    if numeroInput%15==0:
+        contador_multiplo+=1
+    if numeroInput%2==0:
+        suma_pares+=numeroInput
+
+print("A) Numeros negativos: ",contador_negativo)
+print("B) Numeros positivos: ",contador_positivo)
+print("c) Multiplos de 15: ",contador_multiplo)
+print("D) Suma de pares: ",suma_pares)
+
+
+
+
+
+
+
+""" print("*************") """
+""" E) Desarrollar un programa que solicite la carga de 10 números e imprima la 
+    suma de lo últimos 5 valores ingresados """
+""" numeroInput_2=[]
+suma_py=0
+suma_valores_2=0
+
+for i in range(10):
+    numeroInput_py[i]= int(input("Ingrese un numero: ")) """
+
+
+
+
+
+
+""" F) Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado. """
+tabla=0
+numeroInput_3= int(input("Ingrese un numero: "))
+for i in range (1,11,1):
+    tabla = numeroInput_3*i
+    print("F) ",numeroInput_3,"x",i,"= ",tabla,)
+
+
+
+
+""" G) Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en 
+    pantalla 8 -16 -24, etc. """
+multiplo=8
+numero=8
+maximo=500
+print("Multiplos de 8 hasta el 500: ")
+while multiplo <= maximo:
+    print(multiplo)
+    multiplo = numero+multiplo

@@ -10,26 +10,28 @@
 <!-- 
 For
     Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
-    a)  #LISTO# 	La cantidad de valores negativos ingresados. 
-    b)  #LISTO# 	La cantidad de valores positivos ingresados. 
-    c)  #LISTO# 	La cantidad de múltiplos de 15. 
-    d)  #LISTO# 	El valor acumulado de los números ingresados que son pares.
-    e)  #LISTO#     Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
-    f)  #LISTO#     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
+    A)  #LISTO# 	La cantidad de valores negativos ingresados. 
+    B)  #LISTO# 	La cantidad de valores positivos ingresados. 
+    C)  #LISTO# 	La cantidad de múltiplos de 15. 
+    D)  #LISTO# 	El valor acumulado de los números ingresados que son pares.
+    E)  #LISTO#     Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+    F)  #LISTO#     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
 
 While
-    Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
-    Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.
+    G)  #LISTO#    Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
+    H)  #LISTO#    Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.
      -->
 
 
      
    <script>
         /* 
-        a)  #LISTO# 	La cantidad de valores negativos ingresados. 
-        b)  #LISTO# 	La cantidad de valores positivos ingresados. 
-        c)  #LISTO# 	La cantidad de múltiplos de 15. 
-        d)  #LISTO# 	El valor acumulado de los números ingresados que son pares. */
+        A) 	La cantidad de valores negativos ingresados. 
+        B) 	La cantidad de valores positivos ingresados. 
+        C) 	La cantidad de múltiplos de 15. 
+        D) 	El valor acumulado de los números ingresados que son pares. */
+
+
         var contador_negativo=0;
         var contador_positivo=0;
         var suma_pares=0;
@@ -61,7 +63,7 @@ While
 
 
     <script>
-    /*Desarrollar un programa que solicite la carga de 10 números e imprima la 
+    /*E) Desarrollar un programa que solicite la carga de 10 números e imprima la 
     suma de lo últimos 5 valores ingresados. */
             var numeroInput = new Array();
             var suma = 0;
@@ -77,8 +79,7 @@ While
             document.write("La suma de los ultimos 5 valores: ",suma_valores);  
     </script>
 
-
-    <!-- Preguntar sobre la identificacion de Scripts -->
+<!-- F) Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado. -->
     <script class="multiplicacion">
         var numeroInput = parseInt(prompt("Ingrese un numero por teclado: "));
         for(i=1; i<11; i++){
@@ -89,7 +90,7 @@ While
 
 
     <script>
-    /* Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. 
+    /*G) Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. 
     (No se ingresan valores por teclado). */
         document.write("25 terminos de 11: <br>");
         var iterador = 1;
@@ -104,16 +105,22 @@ While
 
 
     <script>
-    /* Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en 
+    /*H) Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en 
     pantalla 8 -16 -24, etc. */
-        var multiplo = 8;
+        var multiplo = 0;
+        var numero = 8;
         var maximo = 500;
         document.write("<br>Multiplos de 8 hasta el 500: <br>");
         while (multiplo <= maximo){
-            multiplo = multiplo * 2;
+            multiplo = multiplo+numero;
 
             document.write(multiplo+"<br>")
+            /* porque llega a 504 */
         }
     </script>
+
+
+
+    <!-- Preguntar sobre la identificacion de Scripts -->
 </body>
 </html>
