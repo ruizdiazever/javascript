@@ -7,14 +7,15 @@
     <title>Document</title>
 </head>
 <body>      
-<!-- For
+<!-- 
+For
     Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
-    a)	La cantidad de valores negativos ingresados.
-    b)	La cantidad de valores positivos ingresados.
-    c)	La cantidad de múltiplos de 15.
-    d)	El valor acumulado de los números ingresados que son pares.
-    e)  Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
-    f)  Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
+    a)  #LISTO# 	La cantidad de valores negativos ingresados. 
+    b)  #LISTO# 	La cantidad de valores positivos ingresados. 
+    c)  #LISTO# 	La cantidad de múltiplos de 15. 
+    d)  #LISTO# 	El valor acumulado de los números ingresados que son pares.
+    e)  #LISTO#     Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+    f)  #LISTO#     Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado por teclado.
 
 While
     Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
@@ -23,7 +24,12 @@ While
 
 
      
-   <!-- <script>
+   <script>
+        /* 
+        a)  #LISTO# 	La cantidad de valores negativos ingresados. 
+        b)  #LISTO# 	La cantidad de valores positivos ingresados. 
+        c)  #LISTO# 	La cantidad de múltiplos de 15. 
+        d)  #LISTO# 	El valor acumulado de los números ingresados que son pares. */
         var contador_negativo=0;
         var contador_positivo=0;
         var suma_pares=0;
@@ -32,18 +38,17 @@ While
 
         for (var i=1; i<=10; i++){
             numeroInput = parseInt(prompt(i+") Ingrese 10 numeros enteros por teclado: "));
-            parseInt(numeroInput);
-            var resto= numeroInput % 15;
-            var resto_2 = numeroInput % 2;
 
             if (numeroInput < 0){
-                contador_negativo+=1;
+                contador_negativo++;
             }else if (numeroInput > 0){
-                contador_positivo+=1;
-            }else if (resto == 0){
-                contador_multiplo+=1;
-            } 
-            if (resto_2 == 0){
+                contador_positivo++;
+            }
+
+            if ((numeroInput%15) == 0){
+                contador_multiplo++;
+            }
+            if (numeroInput%2 == 0){
                 suma_pares+=numeroInput;
             }
         }
@@ -52,30 +57,63 @@ While
         document.write("B) Numeros positivos: ",contador_positivo,"<br>");
         document.write("C) Multiplos de 15: ",contador_multiplo,"<br>");
         document.write("D) Valor acumulado pares: ",suma_pares," de tipo ",typeof(suma_pares),"<br>");
-    </script> -->
-
-
-
-
-    <script>
-            var numeroInput = new Array();
-            var suma = 0;
-
-            for (i=0;i<=11;i++){
-                numeroInput[i] = parseInt(prompt(i+") Ingrese 10 numeros enteros por teclado: "));
-                document.write("Posicion "+(i)+": "+numeroInput[i-1]+"<br>");                
-            }
     </script>
 
 
+    <script>
+    /*Desarrollar un programa que solicite la carga de 10 números e imprima la 
+    suma de lo últimos 5 valores ingresados. */
+            var numeroInput = new Array();
+            var suma = 0;
+            var suma_valores =0;
 
-<!-- Preguntar sobre la identificacion de Scripts -->
-    <!-- <script class="multiplicacion">
+            for (i=1;i<=10;i++){
+                numeroInput[i] = parseInt(prompt(i+") Ingrese 10 numeros enteros por teclado: "));
+                if (i > 5){
+                suma_valores = suma_valores+numeroInput[i];
+                document.write("Posicion "+(i)+": "+numeroInput[i]+"<br>");
+                }              
+            }
+            document.write("La suma de los ultimos 5 valores: ",suma_valores);  
+    </script>
+
+
+    <!-- Preguntar sobre la identificacion de Scripts -->
+    <script class="multiplicacion">
         var numeroInput = parseInt(prompt("Ingrese un numero por teclado: "));
         for(i=1; i<11; i++){
             tabla = (numeroInput * i);
             document.write("F) ",numeroInput,"x",i,"= ",tabla,"<br>");
         }
-    </script> -->
+    </script>
+
+
+    <script>
+    /* Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. 
+    (No se ingresan valores por teclado). */
+        document.write("25 terminos de 11: <br>");
+        var iterador = 1;
+        var numero = 11;
+
+        while (iterador <= 25 ){
+            numero = 11 * iterador;
+            document.write("Termino ",iterador,":   ",numero+"<br>");
+            iterador++;
+        }
+    </script>
+
+
+    <script>
+    /* Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en 
+    pantalla 8 -16 -24, etc. */
+        var multiplo = 8;
+        var maximo = 500;
+        document.write("<br>Multiplos de 8 hasta el 500: <br>");
+        while (multiplo <= maximo){
+            multiplo = multiplo * 2;
+
+            document.write(multiplo+"<br>")
+        }
+    </script>
 </body>
 </html>
