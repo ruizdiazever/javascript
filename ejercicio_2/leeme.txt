@@ -1,2 +1,0 @@
-A) Elaborar una funcion a la cual le enviemos tres enteros & muestre el menor
-B) Realizar una funcion  que reciba 3 parametros & los muestre ordenado de menor a mayor
