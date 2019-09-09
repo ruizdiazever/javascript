@@ -55,6 +55,8 @@ for i in range(nElementos):
 print("La suma de los ultimos 5 numeros es: ",suma)
 
 
+
+
 """ F) """
 print("\nEjercicio F, tabla de multiplicar:")
 tabla=0
