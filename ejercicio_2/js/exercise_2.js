@@ -6,6 +6,7 @@ numero3=parseInt(prompt('Ingrese porfavor un numero: '));
 
 menorMayor(numero1, numero2, numero3);
 
+
 function menorMayor(num1, num2, num3){
     if ( (num1<num2) && (num2 < num3) ){
 
