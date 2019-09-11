@@ -1,5 +1,3 @@
-/* Ejercicio G */
-
 document.write("25 terminos de 11: <br>");
         var iterador = 1;
         var numero = 11;

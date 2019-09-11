@@ -1,5 +1,3 @@
-/* Ejercicio H */
-
 var multiplo = 0;
         var numero = 8;
         var maximo = 500;
