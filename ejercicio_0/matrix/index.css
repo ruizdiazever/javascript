@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin-top: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-block-end: 0%;
+}
+
+header#header_principal{
+    background-color:black;
+}
+
+
+
+
+
+/* EVEEEER */
+.nombres{
+    width : 50%;
+    margin-left : auto;
+    margin-right : auto;
+    padding : 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.formulario{
+    margin-left : auto;
+    margin-right : auto;
+    padding : 20px;
+}
+#cuadro_especial{
+    width: 168px;
+}
+article{
+    display: inline-block;
+}
+.article_videos{
+    display: flex;
+    justify-content:center;
+}
+p{
+    padding: 10px;
+}
+article{
+    border-color: yellow;
+    border-style: solid; 
+    width: 600px;
+}
+.article_video1{
+    padding: 20px;
+}
+.article_video2{
+    padding: 20px;
+}
+div#footer_redes{
+    text-align: center;
+}
+.direccion{
+    text-align: center;
+}
+a#a_footer{
+    text-decoration: aqua;
+    margin: 10px;
+}
+div.direccion{
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+footer{
+    background-color:black;
+}
+
+.contenedor_2{
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin-bottom: 10px;
+}
+    p{
+        color: blueviolet;
+    }
+
+
+    p{
+        font-size: 20px;
+        font-family: serif;
+        color: black;
+    }
+    
+    #hache_uno{
+        color:white;
+        font-size: 50px;
+    }
+
+    #contenedor{
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        border-color: red;
+        background-color: white !important;
+        border-style: solid;
+        background-color:#FFFFFF;
+    }
+
+#lista{
+    display:inline; 
+}
+#lista li{
+    display: inline;
+}
+
+#lista li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    list-style-type: none;
+    border: 30px;
+}
+#lista li a:hover{
+    background-color: #fff;
+    padding-bottom: 12px;
+    color: black;
+}
+
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+
+.header_div_2{
+    display: inline-block;
+
+}
+
+nav{
+    float: right;
+    margin-top: 150px;
+}
+
+#header_principal{
+    top:0;
+    right: 0;
+    position: fixed;
+    background-color:black;
+    height: 210px;
+    width: 100%
+}
+
+#div_lista{
+    float: right;
+}
+
+
+footer > p, address, #a_footer{
+    color: #FFFFFF;
+}
