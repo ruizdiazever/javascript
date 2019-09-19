@@ -13,4 +13,4 @@
 
 ------- EJERCICIO 2
 	2.1) Elaborar una funcion a la cual le enviemos tres enteros & muestre el menor:
-	2.2) Realizar una funcion  que reciba 3 parametros & los muestre ordenado de menor a mayor:
+#PULIR#	2.2) Realizar una funcion  que reciba 3 parametros & los muestre ordenado de menor a mayor:

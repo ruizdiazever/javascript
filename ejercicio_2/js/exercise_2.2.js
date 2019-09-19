@@ -1,4 +1,4 @@
-function ejercicioTwo(){
+function ejercicio_2_2(){
     var numero1, numero2, numero3;
 
     numero1=parseInt(prompt('Ingrese porfavor un numero: '));

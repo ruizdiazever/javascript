@@ -1,4 +1,5 @@
-document.write("25 terminos de 11: <br>");
+function ejercicio_1_7(){
+    document.write("25 terminos de 11: <br>");
         var iterador = 1;
         var numero = 11;
 
@@ -7,4 +8,4 @@ document.write("25 terminos de 11: <br>");
             document.write("Termino ",iterador,":   ",numero+"<br>");
             iterador++;
         }
-        document.write("<br>");
+}
