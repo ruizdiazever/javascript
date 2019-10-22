@@ -14,8 +14,7 @@
             }
         })    
     }) */
-  
-  
+
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -36,23 +35,23 @@
 
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
-           hideValidate(this);
-           $(this).parent().removeClass('true-validate');
+        hideValidate(this);
+        $(this).parent().removeClass('true-validate');
         });
     });
 
-     function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
+function validate (input) {
+    if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+        if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            return false;
         }
     }
+    else {
+        if($(input).val().trim() == ''){
+            return false;
+        }
+    }
+}
 
     function showValidate(input) {
         var thisAlert = $(input).parent();
@@ -62,7 +61,7 @@
         $(thisAlert).append('<span class="btn-hide-validate">&#xf135;</span>')
         $('.btn-hide-validate').each(function(){
             $(this).on('click',function(){
-               hideValidate(this);
+            hideValidate(this);
             });
         });
     }
@@ -83,7 +82,7 @@ input.oninput = function() {
     check(valor);
 };
 
-  function check(mail){
+function check(mail){
     var arr = 0;
     var punto = 0;
 
@@ -102,7 +101,7 @@ input.oninput = function() {
     else if (arr==1 && punto==1){
         mensaje.innerHTML = 'Email valido...';
     }
-  }
+}
 
 function ver (){
     var check = document.getElementById("checkbox1").checked;
@@ -113,8 +112,8 @@ function ver (){
     }
 }
 
+
+
 // MEJORAR LA FUNCION CHECK PARA QUE DETECTE UN CARACTER ANTES QUE EL '@' UNO POSTERIOR Y UN PUNTO POSTERIOR
-
 // DESACTIVAR EL BOTON HASTA QUE SE HAYAN COMPLETADOS LOS 2 CAMPOS CORRECTAMENTE
-
 // VALIDAR EL LOGIN CUANDO LE DEMOS AL BOTON, MOSTARLO COMO ALERT, (VALIDAR CONTRA UN ARRAY)
