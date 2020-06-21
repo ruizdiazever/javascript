@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>Primer pagina</h1>
+    
+    <!-- Menu -->
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="content.html">Contenido</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="https://everdev.pythonanywhere.com" target="_blank">Portfolio</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- Contenido de contact.html -->
+    <h2>Contacto</h2>
+    <form>
+        <p>
+            <label for="name">Nombre</label> <br>
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            <label for="bio">Biografia</label> <br>
+            <textarea name="bio"></textarea>
+        </p>
+
+        <p>
+            <label for="edad">Edad</label><br>
+            <select name="edad">
+                <option value="menor">Menor de 18</option>
+                <option value="adulto">Mayor de 18</option>
+                <option value="anciano">Mayor de 65</option>
+            </select>
+        </p>
+        <input type="submit" value="Enviar email">
+    </form>
+</body>
+</html>

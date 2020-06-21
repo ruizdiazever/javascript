@@ -1,0 +1,137 @@
+<!-- Esto establece la version de HTML -->
+<!DOCTYPE html>
+<!-- Lenguage -->
+<html lang="es">
+    <!-- Cabezera -->
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript with Udemy</title>
+    </head>
+    <body>
+        <!-- h1 siempre uno ya que el buscador busca el primer encabezado -->
+        <h1>Titulo de mi web</h1>
+        <h2>Parrafos, saltos y linea de separacion.</h2>
+        <p>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de 
+            texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde 
+            el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló de tal manera que logró hacer 
+            un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó 
+            como texto de relleno en documentos electrónicos, quedando esencialmente igual al 
+            original. <br> Fue popularizado en los 60s con la creación de las hojas "Letraset", las 
+            cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de 
+            autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+        </p>
+        <p>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de 
+            texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde 
+            el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló de tal manera que logró hacer 
+            un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó 
+            como texto de relleno en documentos electrónicos, quedando esencialmente igual al 
+            original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las 
+            cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de 
+            autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+        </p>
+
+        <hr>
+
+        <h2>Otros etiquetas como strong, blockquote, em, i.</h2>
+        <p>
+            <strong>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de 
+            texto.</strong> Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde 
+            el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló de tal manera que logró hacer 
+            un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó 
+            como texto de relleno en documentos electrónicos, quedando esencialmente igual al 
+            original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las 
+            cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de 
+            autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+        </p>
+        <blockquote>Esto es una cita.</blockquote>
+        <p><em>Este parrafo va a estar en cursiva.</em></p>
+        <p><i>Este parrafo va a estar en cursiva tambien.</i></p>
+
+        <hr>
+        <h2>Listas ordenadas y desordenadas.</h2>
+        <!-- Ordenadas -->
+        
+        <h3>Lista ordenada de frutas.</h3>
+        <ol>
+
+            <li>Manzana
+                <ul>
+                    <li>Roja</li>
+                    <li>Verde</li>
+                </ul>
+            </li>
+
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ol>
+
+        <h3>Lista desordenada de comidas.</h3>
+        <ul>
+            <li>Sorrentinos</li>
+            <li>Pizza</li>
+            <li>Pasta</li>
+            <li>Asado</li>
+        </ul>
+
+        <hr>
+
+        <h2>Imagenes</h2>
+        <img src="img/dog.jpg" alt="Imagen de un perro" title="Ascottino" width="355px">
+
+        <hr>
+
+        <h2>Tablas</h2>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Pais</th>
+            </tr>
+            <tr>
+                <td>Ever</td>
+                <!-- El atributo "colspand" es para expandir una columna en 2 o mas -->
+                <td colspan="2">Ruiz Diaz</td>
+            </tr>
+        </table>
+
+        <hr>
+        
+        <h2>Formulario</h2>
+        <form>
+            <!-- LABEL, INPUT -->
+            <p>
+                <label for="name" >Nombre</label>
+                <input type="text" name="name" placeholder="Escribe tu nombre">
+            </p>
+
+            <!-- LABEL, TEXTAREA -->
+            <p>
+                <label for="description">Descripcion</label>
+                <textarea name="description"></textarea>
+            </p>
+
+            <!-- RADIO BUTTON -->
+            <input type="radio" name="genero" value="man">Hombre <br>
+            <input type="radio" name="genero" value="woman">Mujer <br>
+            <input type="radio" name="genero" value="null">Indefinido <br>
+
+            <!-- SELECT -->
+            <select name="" id="">
+                <option value="man">Hombre</option>
+                <option value="woman">Mujer</option>
+                <option value="null">Indefinido</option>
+            </select>
+
+            <!-- INPUT SUBMIT -->
+            <input type="submit" value="Enviar formulario.">
+        </form>
+    </body>
+</html>
