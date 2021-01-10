@@ -28,4 +28,24 @@ if (year >= 18){
     console.log(namePerson + " es menor de edad.");
 }
 
+/* Operadores logicos
+AND = &&
+OR  = ||
+NEG = !
+*/
 
+// AND y !
+var year = 2020;
+
+if(year != 2000 && year <= 2020 && year != 2018){
+    console.log("Estamos en la era actual.");
+}else{
+    console.log("Estamos en la era post moderna.");
+}
+
+// OR
+if(year == 2008 || year >= 2018 && year == 2028){
+    console.log("El año acaba en 8.");
+}else{
+    console.log("El año no acaba en 8.")
+}
