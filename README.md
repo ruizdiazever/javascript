@@ -1,2 +1,3 @@
 # Homework with JS and HTML5 + CSS
-Programacion web at IFTS
+- Programation web by IFTS
+- JavaScript course by Udemy
