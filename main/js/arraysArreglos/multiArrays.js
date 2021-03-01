@@ -18,8 +18,6 @@ console.log(cine[1][1]);
 
 // Add element in array
 movies.push("Batman");
-console.log(movies);
-
 
 
 // Exercise
@@ -30,4 +28,23 @@ do{
     movies.push(userMovie);
 }while(userMovie != "STOP");
 
+movies.pop();           // Delete element in array "STOP". 
+//movies.pop();           // Delete a element more.
 console.log(movies);
+
+
+// DELETE ELEMENT !IMPORTANT
+var indice = movies.indexOf("Gran torino");
+
+// El método splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
+if (indice > -1){
+    movies.splice(indice, 1); // (elementoAeliminar, cantidad)
+}
+
+console.log(movies);
+
+
+
+// JOIN, une un array separados por comas..
+var movieString = movies.join();
+console.log(movieString);
